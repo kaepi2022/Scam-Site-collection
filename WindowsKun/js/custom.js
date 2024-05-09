@@ -5,7 +5,7 @@ function getQueryParam(param) {
 $(document).ready(function(){
 
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'https://github.com/kaepi2022/Scam-Site-collection/raw/main/%E5%AE%9D%E7%AE%B1%E3%81%AE%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E3%82%B3%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC.mp3');
+    audioElement.setAttribute('src', 'https://github.com/kaepi2022/Scam-Site-collection/raw/main/WindowsKun/js/alert-en.wav');
     
     audioElement.addEventListener('ended', function() {
         this.play();
