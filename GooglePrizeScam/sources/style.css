@@ -1,0 +1,383 @@
+@font-face {
+  font-family: 'RobotoDraft';
+  font-style: normal;
+  font-weight: 400;
+  src: local('RobotoDraft'), local('RobotoDraft-Regular'), url(0xES5Sl_v6oyT7dAKuoni4gp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2'), url(0xES5Sl_v6oyT7dAKuoni7rIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'RobotoDraft';
+  font-style: normal;
+  font-weight: 500;
+  src: local('RobotoDraft Medium'), local('RobotoDraft-Medium'), url(u0_CMoUf3y3-4Ss4ci-VwXJuJo8UJJfpGKt7pXjBv4s.woff2) format('woff2'), url(u0_CMoUf3y3-4Ss4ci-VwaTA90I55Xt7owhZwpPnMsc.woff) format('woff');
+}
+
+.clear{
+	clear: both;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: arial,sans-serif;
+}
+
+.clear{
+	clear: both;
+}
+
+.list_item{
+	padding-left: 1em;
+	margin-bottom: 0 !important;
+}
+
+#prize_confirmation{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    border-radius: 2px;
+    padding: 15px;
+    font-family: 'RobotoDraft',arial,sans-serif;
+    color: #757575;
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+    max-height: 95%;
+    overflow-y: scroll;
+}
+
+#prize_confirmation p{
+	margin-bottom: 0.5em;
+}
+
+#prize_confirmation_headline{
+	font-size: 20px;
+	color: #212121;
+	margin-bottom: 0.618em;
+}
+
+#prize_confirmation_prize_image{
+	margin-bottom: 10px;
+}
+
+#prize_confirmation_prize_name{
+	color: #212121;
+	font-weight: 500;
+	margin-bottom: 0.618em;
+}
+
+#black_overlay{
+	background-color: rgba(0, 0, 0, 0.45);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 998;
+	display: none;
+}
+
+#header{
+	background-color: #f1f1f1;
+	background-image: -webkit-gradient(radial,100 36,0,100 -40,120,from(#fafafa),to(#f1f1f1));
+	height: 64px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#logo{
+	position: relative;
+	top: 15px;
+	left: 14px;
+}
+
+#header_inner_right{
+	float: right;
+	min-width: 149px;
+	float: right;
+	padding-left: 30px;
+    padding-right: 30px;
+    top: 8px;
+    position: relative;
+    text-align: right;
+}
+
+#header_squares{
+	opacity: .55;
+	top: 4px;
+	position: relative;
+	cursor: pointer;
+}
+
+#header_squares:hover{
+	opacity: .85;
+}
+
+#header_login_button{
+	font-size: 13px;
+	color: #fff;
+	border: 1px solid #4285f4;
+	font-weight: bold;
+	background: #4285f4;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+    cursor: default;
+    margin-left: 15px;
+}
+
+#header2{
+	border-bottom: 1px solid #dedede;
+    color: #dd4b39;
+    font-size: 20px;
+    height: 57px;
+    line-height: 57px;
+    padding-left: 46px;
+}
+
+#wrapper{
+	max-width: 978px;
+	margin: 0 auto;
+}
+
+#content{
+	margin-top: 30px;
+	/*margin-left: 252px*/
+}
+
+#headline{
+	font-family: 'RobotoDraft',arial,sans-serif;
+	font-size: 34px;
+	max-width: 720px;
+	margin: 0 auto;
+	margin-bottom: 0.618em;
+}
+
+#copy{
+	font-family: 'RobotoDraft',arial,sans-serif;
+	color: #757575;
+	font-size: 16px;
+	line-height: 24px;
+	max-width: 720px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#prizes{
+	max-width: 610px;
+	margin: 0 auto;
+	margin-top: 42px;
+}
+
+.prize{
+	float: left;
+	margin-left: 40px;
+	cursor: pointer;
+	position: relative;
+}
+
+.prize:first-of-type{
+	margin-left: 0;
+}
+
+.prize_image{
+	width: 175px;
+	height: 175px;
+	margin-bottom: 10px;
+}
+
+.prize_button{
+	background: #00c853;
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'RobotoDraft',arial,sans-serif;
+	font-size: 16px;
+    height: 48px;
+    letter-spacing: .5px;
+    line-height: 48px;
+    padding: 0 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
+
+.prize_button.confirm, .prize_button.abort, .prize_button.submit_certificate, .prize_button.finish{
+	width: 210px;
+	margin-top: 16px;
+	display: inline-block;
+}
+
+.prize_button.finish{
+	width: 290px !important;
+}
+
+.prize_button.abort{
+	margin-left: 16px;
+}
+
+.prize_button:hover{
+	background-color: #43a047;
+}
+
+.prize_button.confirm:hover{
+	background-color: #43a047 !important;	
+}
+
+.real_prize{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	display: none;
+}
+
+.real_prize_image{
+	margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    
+}
+
+#certificate_form{
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.certificate_data{
+	padding: 1px 8px;
+	font-family: 'RobotoDraft',arial,sans-serif;
+	color: rgba(0,0,0,0.54);
+	height: 30px;
+	font-size: 16px;
+	border-radius: 1px;
+	border: 1px solid #d9d9d9;
+	border-width: 0 0 1px 0;
+	outline: none;
+	margin-bottom: 13px;
+}
+
+.certificate_data:focus{
+	border: 1px solid #4d90fe;
+	border-width: 0 0 1px 0;
+}
+
+.certificate_label{
+	color: rgba(0,0,0,0.87);
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 4px !important;
+}
+
+#limit_notice{
+	font-weight: 500;
+	color: rgba(0,0,0,0.87);
+	font-size: 16px;
+}
+
+#hall_of_fame{
+	max-width: 700px;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+#hall_of_fame_headline{
+	color: #757575;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+	margin-bottom: 0.5em !important;
+}
+
+.hall_of_fame_winner_image{
+	border-radius: 24px;
+	box-shadow: 0 1px 2px #8d8d8d;
+}
+
+.hall_of_fame_winner{
+	position: relative;
+	margin-bottom: 30px;
+	display: inline-block;
+    min-width: 340px;
+}
+
+.hall_of_fame_winner_info{
+	position: absolute;
+	height: 48px;
+	display: inline-block;
+	top: 0;
+	margin-left: 9px;
+}
+
+.hall_of_fame_winner_info_name{
+	display: inline-block;
+	font-weight: 500;
+	color: #8d8d8d;
+	font-size: 12px;
+}
+.hall_of_fame_winner_info_date{
+	display: inline-block;
+	color: #aaa;
+	font-size: 11px;
+	margin-left: 2px;
+}
+
+.hall_of_fame_winner_prize{
+	display: inline-block;
+	/*font-weight: 500;*/
+	color: #757575;
+	font-size: 13px;
+}
+
+.hall_of_fame_winner_prize span{
+	font-weight: 500;
+}
+
+@media (max-width: 1150px) {
+	.prize_button.abort{
+	    margin-left: 0;
+	    display: block;
+	}
+	#header2{
+		padding-left: 14px
+	}
+}
+
+@media (max-width: 750px) {
+	#prize_confirmation{
+	    width: 90%;
+	}
+}
+
+@media (max-width: 988px) {
+	#wrapper{
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 635px) {
+	.prize:first-of-type {
+	    margin: 0 auto;
+	    margin-bottom: 20px;
+	}
+	.prize{
+		float: none;
+		margin-left: 0;
+		max-width: 95%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.prize_image{
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 1px;
+	}
+}
